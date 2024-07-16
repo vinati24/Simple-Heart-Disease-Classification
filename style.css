@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('heart_img5.jpg'); /* add background image */
+    background-size: cover; /* scale the image to cover the entire page */
+    background-position: center; /* center the image horizontally and vertically */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7; /* updated background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* updated border radius */
+    margin-top: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px; /* updated font size */
+    color: #333; /* updated color */
+    margin-bottom: 20px; /* added margin bottom */
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #6598be; /* updated background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 100%; /* added width: 100% to make it full-width */
+    box-sizing: border-box; /* added box-sizing: border-box to make padding and border included in width */
+}
+
+.button:hover {
+    background-color: #6598be; /* updated background color */
+    
+    
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 36px;
+}
+
+form h2 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="tel"], input[type="url"], textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 15px 30px; /* updated padding */
+    font-size: 18px; /* updated font size */
+    font-weight: bold; /* added font weight */
+    color: #fff;
+    background-color: #6598be; /* updated background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color:#6598be; /* updated hover background color */
+}
+
+.result-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.result-container .button {
+    padding: 10px 30px;
+    background-color: #6598be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.result-container .button:hover {
+    background-color: #6598be;
+}
