@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Heart Disease Prediction Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Heart Disease Prediction</h2>
+        <form action="/predict" method="post">
+            <h2 class="form-heading">Enter Your Details</h2>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="sex">Sex (1=male, 0=female):</label>
+            <input type="number" id="sex" name="sex" required>
+            <label for="cp">Chest Pain Type (0-3):</label>
+            <input type="number" id="cp" name="cp" required>
+            <label for="trestbps">Resting Blood Pressure:</label>
+            <input type="number" id="trestbps" name="trestbps" required>
+            <label for="chol">Serum Cholesterol:</label>
+            <input type="number" id="chol" name="chol" required>
+            <label for="fbs">Fasting Blood Sugar > 120 mg/dl (1=true, 0=false):</label>
+            <input type="number" id="fbs" name="fbs" required>
+            <label for="restecg">Resting Electrocardiographic Results (0-2):</label>
+            <input type="number" id="restecg" name="restecg" required>
+            <label for="thalach">Maximum Heart Rate Achieved:</label>
+            <input type="number" id="thalach" name="thalach" required>
+            <label for="exang">Exercise Induced Angina (1=yes, 0=no):</label>
+            <input type="number" id="exang" name="exang" required>
+            <label for="oldpeak">ST Depression Induced by Exercise Relative to Rest:</label>
+            <input type="number" id="oldpeak" name="oldpeak" step="0.1" required>
+            <label for="slope">Slope of the Peak Exercise ST Segment (0-2):</label>
+            <input type="number" id="slope" name="slope" required>
+            <label for="ca">Number of Major Vessels (0-4) Colored by Fluoroscopy:</label>
+            <input type="number" id="ca" name="ca" required>
+            <label for="thal">Thalassemia (0=normal, 1=fixed defect, 2=reversible defect):</label>
+            <input type="number" id="thal" name="thal" required>
+            <button type="submit" class="button">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
